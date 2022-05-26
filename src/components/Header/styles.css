@@ -1,0 +1,104 @@
+header{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+    header a {
+        text-decoration: none;
+        color: rgb(25, 73, 48);
+        font-size: 17px;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo p{
+        font-size: small;
+    }
+    .imglogo{
+        width: 50px;
+        height: auto;
+    }
+    .options ul li a{
+        margin-left: 25px;
+    }
+    .options ul{
+        display: flex;
+    }
+    ul li{
+        list-style: none;
+    }
+    
+    .active{
+        font-weight: bold ;
+        color: red ;
+    }
+    
+    .greet{
+        color: white;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    
+    .user-info{
+        position: relative;
+        display: inline-block;
+    }
+    .logout{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,50px) scale(0);
+        bottom: 0;
+        padding: 10px 20px;
+        border-radius: 4px;
+        color: white;
+        background-color: red;
+        cursor: pointer;
+        border: none;
+        transition-delay: 0.2s;
+        opacity: 0;
+        transform-origin: top;
+        transition: .2s linear;
+    }
+    
+    .logout:hover{
+        transform: translate(-50%,50px) scale(1);
+        opacity: 1;
+    }
+    .greet:hover +  .logout{
+        transform: translate(-50%,50px) scale(1);
+        opacity: 1;
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        background-image: linear-gradient(rgb(22, 106, 70), rgb(43, 171, 124), rgb(118, 231, 163));
+        
+    }
+    .menu li{
+        margin-left: 40px;
+        padding: 20px;
+        
+    }
+    .menu li a{
+        color: white;
+    }
+    .search{
+        width: 40%;
+        display: flex;
+        align-items: center;
+    }
+    .inputsearch{
+        border: 1px solid rgb(28, 91, 60);
+        height: 25px;
+        border-radius: 5px;
+        flex: 1;
+    }
+    .iconsearch{
+        font-size: 20px;
+        margin-left: 5px;
+        cursor: pointer;
+    }
