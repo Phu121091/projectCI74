@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <div>
     <header>
-      <NavLink to="/" className={`logo ${handleActive}`}>
+      <NavLink to="/" className="logo">
         <img className="imglogo" src="https://www.cdafc.org/wp-content/uploads/2018/10/CDAFC-Dog-Cat-Logo-e1540407791560.png"/>
         <p>Mindx Petshop</p>
       </NavLink>

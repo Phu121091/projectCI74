@@ -1,0 +1,51 @@
+.Dogitem{
+   width: 23%;
+   min-width: 250px;
+   margin: 10px;
+   object-fit: contain;
+   border-bottom:3px solid rgb(190, 33, 106) ;
+   cursor: pointer;
+   padding-bottom:5px ;
+}
+.Dogitem p{
+    color: rgb(190, 33, 106);
+}
+.Dogitem:hover{
+    border: 3px solid rgb(190, 33, 106);
+}
+img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.doglist{
+  display: flex;
+  flex-wrap: wrap;
+}
+h4{  
+    color:rgb(190, 33, 106) ;
+    padding: 10px;
+    flex: 1;
+}
+.menudog ul li{
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+}
+.menudog{
+    background-color:rgb(203, 83, 137) ;
+    width: 20%;
+    min-width: 300px;
+}
+.Dogcontainer{
+    display: flex;
+}
+.headerdog{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(190, 33, 106);
+}
+.headerdog p,select{
+    margin-left: 5px;
+    margin-right: 5px;
+}

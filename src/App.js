@@ -14,6 +14,9 @@ import SignUp from "./pages/SignUp";
 import User from "./pages/User";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import './App.css';
+
+
 
 
 const App = () => {

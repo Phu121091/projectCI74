@@ -1,0 +1,45 @@
+.mainhead{
+    display: flex;
+
+
+}
+.infor{
+    position:absolute ;
+    background: none;
+    color: white;
+    top : 70%;
+    left: 50% ;
+    font-size: 30px;
+}
+.video{
+    position: relative;
+    width: fit-content;
+}
+.homemenu{
+    width: 20%;
+    background-color:rgb(203, 83, 137) ;
+}
+.homemenu ul li {
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+}
+h5{
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    background-color:rgb(190, 33, 106);
+    border: 1px solid white;
+}
+.quangcao{
+    width: 30%;
+}
+.quangcao img{
+    width: 100%;
+    height: 100%;
+}
+
+.dogcatslide{
+    display: flex;
+    flex-wrap: wrap;
+}
