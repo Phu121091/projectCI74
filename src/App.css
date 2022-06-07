@@ -3,3 +3,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+.dogitem,.Dogitem,.cartitem{
+  position: relative;
+}
+.selloff{
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  background-color: red;
+  color: aliceblue;
+  border-radius: 5px;
+  padding: 5px;
+}
+.oldprice{
+  color: gray;
+  text-decoration: line-through;
+}
+.Dogitem{
+  width: 20%;
+    min-width: 250px;
+    margin: 10px;
+    object-fit: contain;
+    border-bottom: 3px solid rgb(190, 33, 106);
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+.sellmain{
+  display: flex;
+  
+}

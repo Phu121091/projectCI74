@@ -1,0 +1,11 @@
+.mainct{
+    display: flex;
+    padding-bottom: 40px;
+
+}
+.inforct{
+    margin: 60px 40px;
+    padding: 20px;
+    line-height: 200%;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}

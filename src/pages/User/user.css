@@ -1,0 +1,20 @@
+.c3{
+    width: 100%;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.c2{
+    margin-top: 20px;
+    padding:0px 10px 10px 10px;
+    width: 80%;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.c1{
+    padding: 10px;
+    border: 1px solid black;
+    margin-top: 10px;
+}

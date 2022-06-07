@@ -6,6 +6,7 @@ const Login = () => {
   const [user, setUser] = useState({
     userName: "",
     passWord: "",
+    buy:[],
   });
 
   const navigate = useNavigate();
@@ -13,20 +14,23 @@ const Login = () => {
   const handleLogIn = (e) => {
     e.preventDefault();
     if (!user.userName || !user.passWord) {
-      toast.error("Username or password isnot correct");
+      toast.error("Xin nhập đầy đủ tên và mật khẩu");
       return;
     }
     let users = localStorage.getItem("users")
       ? JSON.parse(localStorage.getItem("users"))
       : [];
-
+    let check = 0;
     users.forEach((e) => {
       if (user.userName === e.userName && user.passWord === e.passWord) {
-        toast.success("Log in successfully!!");
-        navigate("../user", { replace: true });
+        check++;
+        user.buy=[...e.buy];
+        toast.success("Đăng nhập thành công! Chuyển về trang chủ");
+        navigate("../", { replace: true });
         localStorage.setItem("currentUser", JSON.stringify(user));
-      }
+      } 
     });
+    if (check==0) toast.error("Tài khoản ko đúng");
   };
   return (
     <form onSubmit={handleLogIn}>

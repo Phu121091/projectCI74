@@ -24,6 +24,12 @@
     padding: 5px;
     color: white;
 }
+.homemenu ul li a{
+    color: white;
+}
+.homemenu ul li:hover{
+    background-color: rgb(143, 29, 67);
+}
 h5{
     color: white;
     font-size: 15px;

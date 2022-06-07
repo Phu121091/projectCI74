@@ -7,6 +7,7 @@ const SignUp = () => {
   const [user, setUser] = useState({
     userName: "",
     passWord: "",
+    buy:[],
   });
 
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ const SignUp = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!user.userName || !user.passWord) {
-      toast.error("All field is allowed to empty!!");
+      toast.error("Xin nhập đầy đủ!!");
       return;
     }
     let users = localStorage.getItem("users")
@@ -24,7 +25,7 @@ const SignUp = () => {
     users = [...users, user];
 
     localStorage.setItem("users", JSON.stringify(users));
-    toast.success("Create account successfully!!");
+    toast.success("Tạo tài khoản thành công!!");
     navigate("../log-in", { replace: true });
   };
   return (

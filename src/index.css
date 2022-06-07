@@ -20,10 +20,10 @@ form{
     border-radius: 5px;
 }
 
-form input{
+form input,textarea{
     border: none;
     outline: none;
-    background-color: bisque;
+    background-color: rgb(233, 188, 213);
     padding: 10px;
     border-radius: 5px;
     margin: 10px 0;
@@ -33,7 +33,7 @@ form input{
 form button{
     padding: 10px 20px;
     width: 100%;
-    background-color: aqua;
+    background-color: rgb(222, 14, 128) ;
     color: white;
     border-radius: 5px;
     border: none;
@@ -42,7 +42,7 @@ form button{
 
 a{
     text-decoration: none;
-    color: blue;
+    color: rgb(150, 35, 95);
 }
 #root{
     width: 100%;

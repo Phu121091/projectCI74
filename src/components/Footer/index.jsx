@@ -1,20 +1,21 @@
 import React from "react";
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return <footer>
     <div className="inforcontact">
       <h3>Liên hệ Mindx Petshop</h3>
-      <p>Số 100 Lý Thái Tổ, quận Hoàn Kiếm, Hà nội</p>
-      <p>Email:<a href="">nguyentrongphuu@gamil.com</a></p>
+      <p>Tầng 5, 71 Nguyễn Chí Thanh, Hà Nội</p>
+      <p>Email:<a href="">nguyentrongphuu@gmail.com</a></p>
       <p>Hotline: 0396163991</p>
     </div>
     <div className="support">
       <h3>Hỗ trợ khách hàng</h3>
-      <p>Điều khoản và điều kiện</p>
-      <p>Chính sách bảo mật</p>
-      <p>Chính sách đổi trả</p>
-      <p>Chính sách bảo hành</p>
+      <Link to='/condition'>Điều khoản và điều kiện</Link>
+      <Link to='/confidentialy'>Chính sách bảo mật</Link>
+      <Link to='/restore'>Chính sách đổi trả</Link>
+      <Link to='/warranty'>Chính sách bảo hành</Link>
     </div>
     <div className="cash">
       <h3>Kết nối, thanh toán</h3>

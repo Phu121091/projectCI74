@@ -39,7 +39,7 @@ header{
     }
     
     .greet{
-        color: white;
+        color: rgb(190, 33, 106);
         margin-left: 20px;
         cursor: pointer;
     }
@@ -48,7 +48,7 @@ header{
         position: relative;
         display: inline-block;
     }
-    .logout{
+    /* .logout{
         position: absolute;
         left: 50%;
         transform: translate(-50%,50px) scale(0);
@@ -72,6 +72,14 @@ header{
     .greet:hover +  .logout{
         transform: translate(-50%,50px) scale(1);
         opacity: 1;
+    } */
+    .logout{
+        margin-left: 20px;
+        border: none;
+        color:rgb(190, 33, 106) ;
+        background: none;
+        cursor: pointer;
+        font-size: 17px;
     }
     .menu{
         display: flex;
@@ -103,4 +111,29 @@ header{
         margin-left: 5px;
         cursor: pointer;
         color:rgb(190, 33, 106) ;
+    }
+    .cart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+    }
+    .carticon,.spicon{
+        font-size: 25px;
+        margin-left: 5px;
+        color:rgb(190, 33, 106) ;
+    }
+    .cart .totalcart{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 25px;
+        top: -5px;
+        border-radius: 50%;
+        background-color:rgb(50, 10, 30) ;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
