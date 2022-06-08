@@ -65,7 +65,8 @@ const Carts = () => {
       
       toast.success("Chốt đơn");
       localStorage.removeItem("carts");
-      window.location.reload();
+      setTimeout(() => window.location.reload(), 2000);
+      // window.location.reload();
     } else {
       toast.error("Bạn cần đăng nhập trước");
       navigate("../log-in", { replace: true });

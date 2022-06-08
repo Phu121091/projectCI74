@@ -39,7 +39,7 @@ const Accessdetail = () => {
     
         localStorage.setItem("carts", JSON.stringify(addCarts));
         setCarts(addCarts);
-        window.location.reload();
+        setTimeout(() => window.location.reload(), 1000);
       };
 
 
